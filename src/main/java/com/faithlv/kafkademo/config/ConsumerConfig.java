@@ -1,17 +1,12 @@
 package com.faithlv.kafkademo.config;
 
-import lombok.Data;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-@Data
-@Component
-@ConfigurationProperties(prefix = "spring.kafka.consumer")
+@Configuration
 public class ConsumerConfig {
 
-    private String servers;
-    private boolean commit;
-    private String reset;
-
+    //1.返回配置Map<String,Object>
+    //2.返回ComsumerFactory
+    //3.返回
 }

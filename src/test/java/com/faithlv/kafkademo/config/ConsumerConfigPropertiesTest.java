@@ -5,14 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class ConsumerConfigTest {
+public class ConsumerConfigPropertiesTest {
 
     @Autowired
-    ConsumerConfig consumerConfig;
+    ConsumerConfigProperties consumerConfigProperties;
 
     @Test
     void test1(){
-        System.out.println(consumerConfig.getServers());
+        System.out.println(consumerConfigProperties.getServers());
     }
 
 }
