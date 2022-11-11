@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+das:
+  consumer:
+    servers: 192.168.149.128:9092
+    commit: true
+    reset: earliest
+  producer:
+    servers: 192.168.149.128:9092
+    acks: -1
+    id: kafka-producer
+    size: 5
+
